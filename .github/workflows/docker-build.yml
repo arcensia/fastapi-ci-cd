@@ -37,6 +37,4 @@ jobs:
           username: ${{ secrets.DEPLOY_USER }}
           key: ${{ secrets.DEPLOY_SSH_KEY }}
           script: |
-            cd /home/ubuntu/fastapi-ci-cd
-            git pull origin main  # 스크립트 최신화
-            ./deploy.sh
+            sudo ~/workspace/cicdpratice/deploy.sh
